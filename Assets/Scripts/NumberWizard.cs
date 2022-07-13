@@ -56,6 +56,11 @@ public class NumberWizard : MonoBehaviour
     public void OnPressHigher()
     {
             min = guess + 1;
+
+            if (min >= max) { 
+                min = max;
+            }
+            
             NextGuess();
     }
 
